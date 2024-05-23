@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/backvideo.gif');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.conteiner {
+    background-color: rgb(8, 7, 80);
+    width: 360px;
+    height: 350px;
+    border-radius: 10px;
+    border: outset;
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px 10px 0px;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+
+.fildform {
+    position: relative;
+    border-radius: 3px;
+    border: rgb(255, 153, 1) 2px solid;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.fildlsl {
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+}
+
+.fildbox {
+    width: 100%;
+    border-radius: 3px;
+    border: white 2px solid;
+    height: 55px;
+
+}
+
+.fildlegd {
+    border: rgb(255, 153, 1) 2px solid;
+    /* background-color: rgb(255, 255, 255); */
+    font-size: 25px;
+    border-radius: 3px;
+    color: white;
+
+
+}
+
+.user_input {
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-bottom: rgb(255, 153, 1) 2px solid;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font: calc(999);
+    transition: all 0.4s;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.user_input_senha {
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-bottom: rgb(255, 153, 1) 2px solid;
+    background: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.4s;
+    text-align: center;
+
+}
+
+.user_submit {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border: rgb(255, 255, 255) 2px solid;
+    color: white;
+    background: none;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+select {
+    width: 100%;
+}
+
+.btn-submit {
+    width: 109%;
+    height: 54px;
+   
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.575);
+    font-size: 9px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btnanco,
+a {
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+.btnpass {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    top: -10%;
+    font-size: 10px;
+    font-weight: bolder;
+    left: 45%;
+    margin-bottom: 8px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    z-index: 2;
+
+}
+
+.alert_danger_alun {
+    background-color: rgb(219, 129, 129);
+    width: 210px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    border: outset;
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px 10px 0px;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.alert_danger_proff {
+    background-color: rgb(219, 129, 129);
+    width: 210px;
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    border: outset;
+    box-shadow: rgba(0, 0, 0, 0.616) 10px 10px 10px 0px;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* painel_professor */
+
+
+.Sistema_professor {
+    position: absolute;
+    background: linear-gradient(46deg, rgb(255, 136, 0), rgb(130, 128, 252));
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    border-radius: 5px;
+    border: outset 4px;
+    opacity: 90%;
+    font-size: 0.7rem;
+}
+
+.tabela_sistema {
+    position: relative;
+    background: rgb(0, 102, 255);
+    width: 800px;
+    height: 400px;
+    display: inline-block;
+    content: '';
+    z-index: 11;
+    border: outset 4px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Sistema_alun {
+    position: absolute;
+    background: linear-gradient(46deg, rgb(0, 102, 255), rgb(255, 196, 0));
+    width: 900px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    border-radius: 5px;
+    border: outset 4px;
+    opacity: 90%;
+}
+
+.tabela_sistema_alun {
+    position: relative;
+    background: rgba(255, 230, 0, 0.712);
+    width: 800px;
+    height: 420px;
+    display: inline-block;
+    content: '';
+    z-index: 11;
+    border: outset 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nave_proff {
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: auto;
+}
+
+.nave_proff li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nave_proff a {
+    margin: 0px 82px;
+    padding: 10px 40px;
+    background-color: rgb(255, 174, 0);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: rgb(255, 255, 255) 3px solid;
+}
+
+
+
+.nave_proff_edit {
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: auto;
+}
+
+.nave_proff_edit li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nave_proff_edit a {
+    margin: 0px 90px;
+    padding: 10px 40px;
+    background-color: rgb(255, 174, 0);
+    font-size: 23px;
+    border-radius: 5px;
+    border: rgb(255, 255, 255) 3px solid;
+}
+
+
+
+
+.div_header {
+    border-bottom: white 1px solid;
+}
+
+
+.heade_nav_tb {
+    display: flex;
+}
+
+
+.heade_nav_tb li {
+    list-style-type: none;
+}
+
+#li1 {
+    margin-left: -30px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#li2 {
+    margin-left: 70px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#li3 {
+    margin-left: 200px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#li4 {
+    margin-left: 140px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+#l1 {
+    margin-left: -30px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#l2 {
+    margin-left: 70px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#l3 {
+    margin-left: 80px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#l4 {
+    margin-left: 90px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#l5 {
+    margin-left: 100px;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+#TD {
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+#Tb {
+
+    color: white;
+    width: 47rem;
+    margin: auto;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+.box_lli {
+    position: relative;
+    margin: 15px;
+    text-align: center;
+}
+
+.box_lli input {
+    width: 600px;
+    height: 40px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.box-btn {
+    width: 400px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: outset;
+}
+
+.lgd {
+    color: white;
+    font-size: 25px;
+}
+
+
+.form_add {
+    background-color: blue;
+    margin-top: 20px;
+}
+
+.control {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.label_camp {
+    color: white;
+}
+
+.input_camp {
+    width: 160px;
+    background: none;
+    border: white solid 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.add_btn {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.add_btn button {
+    width: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.add_btn1 {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.add_btn1 button {
+    width: 70px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 16px;
+
+}
+
+
+.form-box {
+    /* background-color: orangered; */
+    margin: 20px;
+    text-align: center;
+}
+
+.form-box label {
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.form-box label:hover {
+    color: orange;
+}
+
+.form-box input {
+    width: 240px;
+    height: 30px;
+
+}
+
+.form-box select {
+    width: 240px;
+    height: 30px;
+
+}
+
+.btn-in {
+    width: 240px;
+    height: 40px;
+    margin: auto;
+    font-size: 17px;
+    margin-left: 300px;
+}
+
+
+.flex_check {
+    font-size: 42px;
+    margin: 50px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+    color: white;
+}
+
+.flex_check input {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.flex_box {
+    font-size: 25px;
+    margin: 50px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+
+
+}
